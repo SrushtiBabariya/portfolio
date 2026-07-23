@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Personal portfolio of Alex Morgan – Full Stack Developer" />
+  <title>Babariya Srushti | Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ========== NAVIGATION ========== -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">Babariya Srushti<span>.</span></a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav-links" id="navLinks" role="navigation">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#resume">Resume</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ========== HERO ========== -->
+  <section class="hero" id="hero">
+    <div class="container">
+    <div class="hero-content">
+      <p class="hero-greeting">Hi, I'm</p>
+      <h1 class="hero-name">Babariya Srushti</h1>
+      <h2 class="hero-title">Full Stack Developer</h2>
+      <p class="hero-subtitle">I build clean, fast, and accessible web experiences — from pixel-perfect UIs to robust back-end systems.</p>
+      <div class="hero-cta">
+      </div>
+      <div class="hero-social">
+        <a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+        </a>
+        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        </a>
+        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter/X">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+        </a>
+      </div>
+    </div>
+    <div class="hero-visual" aria-hidden="true">
+      <div class="avatar-ring">
+        <div class="avatar-placeholder">ME</div>
+      </div>
+      <div class="floating-card card-1"><span class="code-dot green"></span>React</div>
+      <div class="floating-card card-2"><span class="code-dot blue"></span>Node.js</div>
+      <div class="floating-card card-3"><span class="code-dot purple"></span>TypeScript</div>
+    </div>
+    </div><!-- /.container -->
+    <a href="#about" class="scroll-down" aria-label="Scroll down">
+      <span></span>
+    </a>
+  </section>
+
+  <!-- ========== ABOUT ========== -->
+  <section class="section about" id="about">
+    <div class="container">
+      <h2 class="section-title">About Me</h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>I'm a Full Stack Developer with 2+ years of experience crafting modern web applications. I'm passionate about writing clean, maintainable code and turning complex problems into elegant solutions.</p>
+          <p>When I'm not coding, you'll find me contributing to open source, reading about distributed systems, or hiking nearby trails to reset my brain.</p>
+          <ul class="about-facts">
+            <li><span class="fact-label">Location</span>Parul University, Vadodara</li>
+            <li><span class="fact-label">Education</span>B.Tech computer Science, PIT</li>
+            <li><span class="fact-label">Experience</span>2+ Years</li>
+            <li><span class="fact-label">Availability</span>Open to opportunities</li>
+          </ul>
+        </div>
+        <div class="about-stats">
+          <div class="stat-card">
+            <span class="stat-number" data-target="2">0</span>
+            <span class="stat-label">Projects Completed</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number" data-target="2">0</span>
+            <span class="stat-label">Years Experience</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SKILLS ========== -->
+  <section class="section skills" id="skills">
+    <div class="container">
+      <h2 class="section-title">Skills</h2>
+      <div class="skills-categories">
+
+        <div class="skill-group">
+          <h3>Frontend</h3>
+          <div class="skill-bars">
+            <div class="skill-item">
+              <div class="skill-meta"><span>HTML / CSS</span><span>95%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="95"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-meta"><span>JavaScript</span><span>90%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="90"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h3>Backend</h3>
+          <div class="skill-bars">
+            <div class="skill-item">
+              <div class="skill-meta"><span>Python</span><span>78%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="78"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-meta"><span>PostgreSQL</span><span>75%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="75"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h3>Tools &amp; DevOps</h3>
+          <div class="skill-tags">
+            <span class="tag">Git</span>
+            <span class="tag">GitHub Actions</span>
+            <span class="tag">Linux</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PROJECTS ========== -->
+  <section class="section projects" id="projects">
+    <div class="container">
+      <h2 class="section-title">Projects</h2>
+      <div class="project-filters" role="group" aria-label="Filter projects">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="frontend">Frontend</button>
+        <button class="filter-btn" data-filter="fullstack">Full Stack</button>
+        <button class="filter-btn" data-filter="backend">Backend</button>
+      </div>
+      <div class="projects-grid">
+
+        <article class="project-card" data-category="fullstack">
+          <div class="project-img" style="background: linear-gradient(135deg,#6366f1,#8b5cf6)">
+            <span class="project-icon">🛒</span>
+          </div>
+          <div class="project-body">
+            <div class="project-tags"><span>React</span><span>Node.js</span><span>PostgreSQL</span></div>
+            <h3>ShopSwift</h3>
+            <p>A full-stack e-commerce platform with real-time inventory, Stripe payments, and an admin dashboard built with React and Express.</p>
+            <div class="project-links">
+              <a href="#" class="btn-link">Live Demo →</a>
+              <a href="#" class="btn-link btn-link-ghost">GitHub</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="frontend">
+          <div class="project-img" style="background: linear-gradient(135deg,#0ea5e9,#06b6d4)">
+            <span class="project-icon">📊</span>
+          </div>
+          <div class="project-body">
+            <div class="project-tags"><span>React</span><span>D3.js</span><span>TypeScript</span></div>
+            <h3>DataLens Dashboard</h3>
+            <p>An interactive analytics dashboard with dynamic charts, filters, and CSV export — built for non-technical business users.</p>
+            <div class="project-links">
+              <a href="#" class="btn-link">Live Demo →</a>
+              <a href="#" class="btn-link btn-link-ghost">GitHub</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="backend">
+          <div class="project-img" style="background: linear-gradient(135deg,#10b981,#059669)">
+            <span class="project-icon">🔐</span>
+          </div>
+          <div class="project-body">
+            <div class="project-tags"><span>Node.js</span><span>JWT</span><span>Redis</span></div>
+            <h3>AuthKit API</h3>
+            <p>A production-ready authentication microservice with JWT refresh tokens, rate limiting, and role-based access control.</p>
+            <div class="project-links">
+              <a href="#" class="btn-link">Live Demo →</a>
+              <a href="#" class="btn-link btn-link-ghost">GitHub</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="frontend">
+          <div class="project-img" style="background: linear-gradient(135deg,#f59e0b,#ef4444)">
+            <span class="project-icon">✅</span>
+          </div>
+          <div class="project-body">
+            <div class="project-tags"><span>Vue.js</span><span>Pinia</span><span>IndexedDB</span></div>
+            <h3>TaskFlow</h3>
+            <p>A Kanban-style task manager with drag-and-drop, offline support, and dark mode. Works entirely in the browser.</p>
+            <div class="project-links">
+              <a href="#" class="btn-link">Live Demo →</a>
+              <a href="#" class="btn-link btn-link-ghost">GitHub</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="fullstack">
+          <div class="project-img" style="background: linear-gradient(135deg,#ec4899,#8b5cf6)">
+            <span class="project-icon">💬</span>
+          </div>
+          <div class="project-body">
+            <div class="project-tags"><span>React</span><span>Socket.io</span><span>MongoDB</span></div>
+            <h3>ChatRoom</h3>
+            <p>Real-time group chat with private messaging, emoji reactions, file sharing, and read receipts powered by WebSockets.</p>
+            <div class="project-links">
+              <a href="#" class="btn-link">Live Demo →</a>
+              <a href="#" class="btn-link btn-link-ghost">GitHub</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="backend">
+          <div class="project-img" style="background: linear-gradient(135deg,#64748b,#334155)">
+            <span class="project-icon">🤖</span>
+          </div>
+          <div class="project-body">
+            <div class="project-tags"><span>Python</span><span>FastAPI</span><span>OpenAI</span></div>
+            <h3>DocBot</h3>
+            <p>An AI-powered documentation assistant that ingests markdown files and answers questions using RAG with OpenAI embeddings.</p>
+            <div class="project-links">
+              <a href="#" class="btn-link">Live Demo →</a>
+              <a href="#" class="btn-link btn-link-ghost">GitHub</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== RESUME ========== -->
+  <section class="section resume" id="resume">
+    <div class="container">
+      <h2 class="section-title">Resume</h2>
+      <div class="resume-grid">
+
+        <div class="resume-column">
+          <h3 class="resume-col-title">Education</h3>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <span class="timeline-date">2024 – 2026</span>
+              <h4>B.Tech. Computer Science</h4>
+            </div>
+          </div>
+
+          <h3 class="resume-col-title" style="margin-top:2rem">Certifications</h3>
+
+          <div class="cert-list">
+            <div class="cert-item">
+              <span class="cert-icon">🏆</span>
+              <div>
+                <strong>GCF Certified Developer</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CONTACT ========== -->
+  <section class="section contact" id="contact">
+    <div class="container">
+      <h2 class="section-title">Get in Touch</h2>
+      <p class="section-subtitle">Have a project idea, job offer, or just want to say hi? Drop me a message — I reply within 24 hours.</p>
+      <div class="contact-grid">
+
+        <div class="contact-info">
+          <div class="contact-item">
+            <div class="contact-icon" aria-hidden="true">📧</div>
+            <div>
+              <strong>Email</strong>
+              <a href="mailto:babariyasrushti293@gmail.com">babariyasrushti293@gmail.com</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon" aria-hidden="true">📍</div>
+            <div>
+              <strong>Location</strong>
+              <span>Parul University, PIT</span>
+            </div>
+          </div>
+        </div>
+
+        <form class="contact-form" id="contactForm" novalidate>
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name" required autocomplete="name" />
+            <span class="field-error" id="nameError" role="alert"></span>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="your@email.com" required autocomplete="email" />
+            <span class="field-error" id="emailError" role="alert"></span>
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" placeholder="What's this about?" required />
+            <span class="field-error" id="subjectError" role="alert"></span>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell me about your project or say hello..." required></textarea>
+            <span class="field-error" id="messageError" role="alert"></span>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full" id="submitBtn">Send Message</button>
+          <div class="form-status" id="formStatus" role="alert" aria-live="polite"></div>
+        </form>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container">
+      <p>Designed &amp; built by <strong>Babariya Srushti</strong> · <span id="year"></span></p>
+      <p class="footer-note">Made with HTML, CSS &amp; JavaScript</p>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">&#8679;</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
