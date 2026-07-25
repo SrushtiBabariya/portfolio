@@ -6,10 +6,9 @@
  *  3. Scroll-reveal animations (IntersectionObserver)
  *  4. Animated stat counters
  *  5. Skill-bar fill animation triggered on scroll
- *  6. Project filter buttons
- *  7. Contact form validation + simulated submission
- *  8. Back-to-top button
- *  9. Footer year
+ *  6. Contact form validation + simulated submission
+ *  7. Back-to-top button
+ *  8. Footer year
  */
 
 'use strict';
@@ -252,54 +251,10 @@ function animateCounter(el) {
   );
 
   fills.forEach(el => observer.observe(el));
-})();
+})();.
 
 /* ============================================================
-   7. PROJECT FILTER
-   ============================================================ */
-(function initProjectFilter() {
-  const filterBtns = document.querySelectorAll('.filter-btn');
-  const cards      = document.querySelectorAll('.project-card');
-
-  if (!filterBtns.length || !cards.length) return;
-
-  filterBtns.forEach(btn => {
-    btn.addEventListener('click', () => {
-      // Update active button
-      filterBtns.forEach(b => b.classList.remove('active'));
-      btn.classList.add('active');
-
-      const filter = btn.dataset.filter;
-
-      cards.forEach(card => {
-        const match = filter === 'all' || card.dataset.category === filter;
-
-        if (match) {
-          // Fade in
-          card.classList.remove('hidden');
-          // Brief delay so the DOM reflow fires before the opacity transition
-          requestAnimationFrame(() => {
-            card.style.opacity = '1';
-            card.style.transform = 'translateY(0)';
-          });
-        } else {
-          // Fade out then hide
-          card.style.opacity = '0';
-          card.style.transform = 'translateY(10px)';
-          setTimeout(() => {
-            // Only hide if still filtered out (user might have changed filter again)
-            if (btn.classList.contains('active') && card.dataset.category !== filter && filter !== 'all') {
-              card.classList.add('hidden');
-            }
-          }, 280);
-        }
-      });
-    });
-  });
-})();
-
-/* ============================================================
-   8. CONTACT FORM
+   7. CONTACT FORM
    ============================================================ */
 (function initContactForm() {
   const form       = document.getElementById('contactForm');
@@ -418,7 +373,7 @@ function animateCounter(el) {
 })();
 
 /* ============================================================
-   9. BACK-TO-TOP BUTTON
+   8. BACK-TO-TOP BUTTON
    ============================================================ */
 function toggleBackToTop() {
   const btn = document.getElementById('backToTop');
@@ -439,7 +394,7 @@ function toggleBackToTop() {
 })();
 
 /* ============================================================
-   10. FOOTER YEAR
+   9. FOOTER YEAR
    ============================================================ */
 (function setFooterYear() {
   const el = document.getElementById('year');
